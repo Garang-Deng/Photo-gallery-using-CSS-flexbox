@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Algerian;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: rgb(224, 224, 221);
+}
+.header-main-title {
+  text-align: center;
+  background: #9d9d9d;
+  padding: 30px;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.gallery img {
+  width: 25%;
+  height: 450px;
+  padding: 4px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .gallery img {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+  }
+}
